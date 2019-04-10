@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>		
+			.img1{
+				-webkit-filter: grayscale(0.8);/* 灰度 0-1 */
+			}
+			.img2{
+				-webkit-filter: brightness(1.2);/* 亮度   0是全黑*/
+			}
+			.img3{
+				-webkit-filter: blur(10px);/* 模糊度  0是最清*/
+				 transition: all 1s;
+			}
+			.img4{
+				-webkit-filter: contrast(3);/*对比度 （百分比） */
+			}
+			.img5{
+				-webkit-filter: saturate(1.5) ;/*饱和度 （百分比） */
+			}
+			.img6{	
+				-webkit-filter: sepia(1);/*褐色程度  1是全褐色*/
+			}
+			.img7{		
+				-webkit-filter: hue-rotate(35deg);/*色相旋转*/
+			}
+			.img8{
+				-webkit-filter: invert(1);/* 反相 1是底色 */
+				animation: donghua1 5s;
+			}
+			
+			@keyframes donghua1{
+				from{
+					-webkit-filter: invert(1);
+				}
+				to{
+					-webkit-filter: invert(0);
+				}
+			}
+			.img9{
+				animation: donghua2 5s;
+			}
+			
+			@keyframes donghua2{
+				0%{
+					-webkit-filter: brightness(1) grayscale(0);
+				}
+				30%{
+					-webkit-filter: brightness(1) grayscale(1);
+					
+				}
+				100%{
+					-webkit-filter: brightness(1) grayscale(1);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>	
+		<img class="img1" src="img/111.jpg"/>
+		<img class="img2" src="img/111.jpg"/>
+		<img class="img3" src="img/111.jpg"/>
+		<img class="img4" src="img/111.jpg"/>
+		<img class="img5" src="img/111.jpg"/>
+		<img class="img6" src="img/111.jpg"/>
+		<img class="img7" src="img/111.jpg"/>
+		<img class="img8" src="img/111.jpg"/>
+		<img class="img9" src="img/111.jpg"/>
+		
+		
+	</body>
+</html>
